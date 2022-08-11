@@ -156,6 +156,7 @@ button {
     font-size: large;
     border-radius: 5px;
     padding: .2em;
+    cursor: pointer;
 }
 
 .heroku {
