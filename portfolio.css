@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', Sans-Serif;
+    color: rgb(252, 163, 17);
+    text-shadow: 2px 2px 3px black;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(229, 229, 229);
+    font-family: 'Lora', Serif;
+    font-size: 14px;
+}
+
+#welcome-section {
+    background-color: black;
+    background: rgba(0, 0, 0, .8) url(./pictures/christopher-gower-m_HRfLhgABo-unsplash.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+}
+
+#welcome-section p {
+    font-size: 3vw;
+    font-style: italic;
+}
+
+h1 {
+    padding-top: calc(45vh - 4vw);
+    font-size: 8vw;
+}
+
+h2 {
+    font-size: 4vw;
+    text-align: center;
+    margin: 1em;
+}
+
+h3 {
+    font-size: 2em;
+    margin: 1em;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1em;
+    z-index: 2;
+    transition-duration: .5s;
+}
+
+#navbar ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    list-style: none;
+}
+
+#navbar ul li a {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+}
+
+.project-tile {
+    display: flex;
+    background-color: rgb(20, 33, 61);
+    border-radius: 1em;
+    margin: 2em;
+    box-shadow: .75em .75em 1em black;
+    width: 42%;
+}
+
+#projects {
+    width: 100%;
+    margin: auto;
+
+}
+
+#project-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+
+}
+
+img {
+    width: 50%;
+    height: 100%;
+    border-radius: 1em 0 0 1em;
+}
+
+#contacts {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(20, 33, 61);
+    justify-items: center;
+    margin-top: 1em;
+}
+
+#contact-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1em;
+    padding-bottom: 1em;
+}
+
+.column {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.column p {
+    margin: 1em;
+    margin-bottom: 3em;
+    font-size: 1.2em;
+}
+
+.links {
+    font-size: 5vw;
+    transition-duration: .25s;
+    transition-timing-function: ease-in-out;
+    color: rgb(252, 163, 17);
+}
+
+.links:hover {
+    transform: scale(1.2);
+}
+
+.contact-links {
+    display: flex;
+    list-style: none;
+    width: 30%;
+    margin: auto;
+    margin-top: 1em;
+    justify-content: space-between;
+}
+
+button {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgb(252, 163, 17);
+    font-size: large;
+    border-radius: 5px;
+    padding: .2em;
+}
+
+.heroku {
+    left: 0;
+}
+
+.github {
+    right: 0;
+}
+
+a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1150px) {
+    .project-tile {
+        width: 85%;
+    }
+
+    #project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heroku {
+        left: 10%;
+    }
+    
+    .github {
+        right: 10%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .project-tile {
+        flex-direction: column;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 1em 1em 0 0;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    #contact-container a {
+        width: 300px;
+        margin-bottom: 1em;
+    }
+
+    .links {
+        font-size: xx-large;
+    }
+}
