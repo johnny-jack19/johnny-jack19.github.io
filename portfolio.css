@@ -214,6 +214,22 @@ a {
     }
 
     .links {
-        font-size: xx-large;
+        font-size: 8vw;
+    }
+
+    h1 {
+        font-size: 10vw;
+    }
+    
+    h2 {
+        font-size: 6vw;
+    }
+    
+    h3 {
+        font-size: 3em;
+    }
+
+    #welcome-section p {
+        font-size: 4vw;
     }
 }
