@@ -83,7 +83,7 @@ button:hover {
   bottom: 0.5em;
   font-size: 5em;
   text-align: center;
-  left: calc(50vw - 40px);
+  width: 100%;
   animation-duration: 1.7s;
   animation-iteration-count: infinite;
   animation-name: bounce;
