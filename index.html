@@ -1,240 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/ed5bf3e9b7.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Lora|Roboto:400,700"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./portfolio.css" />
-    <title>Jonathan Jackson's Portfolio</title>
-  </head>
-  <body>
-    <nav id="navbar">
-      <ul>
-        <li>
-          <a href="#welcome-section">Welcome</a>
-        </li>
-        <li>
-          <a href="#projects">Projects</a>
-        </li>
-        <li>
-          <a href="#contacts">Contacts</a>
-        </li>
-      </ul>
-    </nav>
-    <section id="welcome-section">
-      <h1>Jonathan Jackson</h1>
-      <p>Web Developer</p>
-      <ul class="contact-links">
-        <li>
-          <a href="https://github.com/johnny-jack19" target="_blank"
-            ><i class="fa-brands fa-github links"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/jonathan-jackson-m/"
-            target="_blank"
-            ><i class="fa-brands fa-linkedin links"></i
-          ></a>
-        </li>
-        <li>
-          <a href="mailto:jacksonj9891@gmail.com" target="_blank"
-            ><i class="fa-solid fa-envelope links"></i
-          ></a>
-        </li>
-      </ul>
-      <div id="arrow">&#8595;</div>
-    </section>
-    <section id="projects">
-      <h2>These are a few of my projects</h2>
-      <div id="project-container">
-        <div class="project-tile">
-          <h3>Chat Website</h3>
-          <div class="img-overlay-container">
-            <img src="./pictures/chat.png" alt="Chat Website" />
-            <div class="overlay hidden">
-              <p class="center">
-                This is the chat website portion of a 2 part project. The other
-                portion is an API/database for it to connect to.
-              </p>
-              <br />
-              <p class="center">Made with:</p>
-              <p class="made-with">
-                <span class="made-with-item">HTML5</span>
-                <span class="made-with-item">CSS3</span>
-                <span class="made-with-item">JavaScript</span>
-                <span class="made-with-item">Node.js</span>
-                <span class="made-with-item">Express.js</span>
-                <span class="made-with-item">MySQL</span>
-              </p>
-              <a href="https://jackson-chat.herokuapp.com/" target="_blank">
-                <button>View Website</button>
-              </a>
-              <a
-                href="https://github.com/johnny-jack19/chat-box"
-                target="_blank"
-              >
-                <button>View Code</button>
-              </a>
-            </div>
-          </div>
-          <button class="view-info" onclick="naming(this)">View More</button>
-        </div>
 
-        <div class="project-tile">
-          <h3>Hotel Website</h3>
-          <div class="img-overlay-container">
-            <img src="./pictures/hotelSite.jpg" alt="Hotel Website" />
-            <div class="overlay hidden">
-              <p class="center">
-                This is the customer website portion of a 3 part hotel project.
-                The other two portions are a company website and an API/database
-                for it to connect to.
-              </p>
-              <br />
-              <p class="center">Made with:</p>
-              <p class="made-with">
-                <span class="made-with-item">HTML5</span>
-                <span class="made-with-item">CSS3</span>
-                <span class="made-with-item">JavaScript</span>
-                <span class="made-with-item">Node.js</span>
-                <span class="made-with-item">Express.js</span>
-                <span class="made-with-item">MySQL</span>
-              </p>
-              <a href="https://indigo-sky.herokuapp.com/" target="_blank">
-                <button>View Website</button>
-              </a>
-              <a
-                href="https://github.com/johnny-jack19/indigo-sky"
-                target="_blank"
-              >
-                <button>View Code</button>
-              </a>
-            </div>
-          </div>
-          <button class="view-info" onclick="naming(this)">View More</button>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/ed5bf3e9b7.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lora|Roboto:400,700" rel="stylesheet" />
+  <link rel="stylesheet" href="./portfolio.css" />
+  <title>Jonathan Jackson's Portfolio</title>
+</head>
 
-        <div class="project-tile">
-          <h3>Company Website</h3>
-          <div class="img-overlay-container">
-            <img src="./pictures/company.jpg" alt="Hotel Company Website" />
-            <div class="overlay hidden">
-              <p class="center">
-                This is the company website portion of a 3 part hotel project.
-                The other two portions are a customer website and an
-                API/database for it to connect to.
-              </p>
-              <br />
-              <p class="center">Made with:</p>
-              <p class="made-with">
-                <span class="made-with-item">HTML5</span>
-                <span class="made-with-item">CSS3</span>
-                <span class="made-with-item">JavaScript</span>
-                <span class="made-with-item">Node.js</span>
-                <span class="made-with-item">Express.js</span>
-                <span class="made-with-item">MySQL</span>
-              </p>
-              <a
-                href="https://jackson-hotel-company.herokuapp.com/"
-                target="_blank"
-              >
-                <button>View Website</button>
-              </a>
-              <a
-                href="https://github.com/johnny-jack19/hotel-company"
-                target="_blank"
-              >
-                <button>View Code</button>
-              </a>
-            </div>
+<body>
+  <nav id="navbar">
+    <ul>
+      <li>
+        <a href="#welcome-section">Welcome</a>
+      </li>
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+      <li>
+        <a href="#contacts">Contacts</a>
+      </li>
+    </ul>
+  </nav>
+  <section id="welcome-section">
+    <h1>Jonathan Jackson</h1>
+    <p>Web Developer</p>
+    <ul class="contact-links">
+      <li>
+        <a href="https://github.com/johnny-jack19" target="_blank"><i class="fa-brands fa-github links"></i></a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/jonathan-jackson-m/" target="_blank"><i
+            class="fa-brands fa-linkedin links"></i></a>
+      </li>
+      <li>
+        <a href="mailto:jacksonj9891@gmail.com" target="_blank"><i class="fa-solid fa-envelope links"></i></a>
+      </li>
+    </ul>
+    <div id="arrow"><a href="#projects">&#8595;</a></div>
+  </section>
+  <section id="projects">
+    <h2>These are a few of my projects</h2>
+    <div id="project-container">
+      <div class="project-tile">
+        <h3>Chat Website</h3>
+        <div class="img-overlay-container">
+          <img src="./pictures/chat.png" alt="Chat Website" />
+          <div class="overlay hidden">
+            <p class="center">
+              This is the chat website portion of a 2 part project. The other
+              portion is an API/database for it to connect to.
+            </p>
+            <br />
+            <p class="center">Made with:</p>
+            <p class="made-with">
+              <span class="made-with-item">HTML5</span>
+              <span class="made-with-item">CSS3</span>
+              <span class="made-with-item">JavaScript</span>
+              <span class="made-with-item">Node.js</span>
+              <span class="made-with-item">Express.js</span>
+              <span class="made-with-item">MySQL</span>
+            </p>
+            <a href="https://jackson-chat.herokuapp.com/" target="_blank">
+              <button>View Website</button>
+            </a>
+            <a href="https://github.com/johnny-jack19/chat-box" target="_blank">
+              <button>View Code</button>
+            </a>
           </div>
-          <button class="view-info" onclick="naming(this)">View More</button>
         </div>
-
-        <div class="project-tile">
-          <h3>Analog Clock</h3>
-          <div class="img-overlay-container">
-            <img src="./pictures/clock.jpg" alt="Analog Clock" />
-            <div class="overlay hidden">
-              <p class="center">CSS Analog clock.</p>
-              <br />
-              <p class="center">Made with:</p>
-              <p class="made-with">
-                <span class="made-with-item">HTML5</span>
-                <span class="made-with-item">CSS3</span>
-                <span class="made-with-item">JavaScript</span>
-              </p>
-              <a href="https://jacksonclock.herokuapp.com/" target="_blank">
-                <button>View Website</button>
-              </a>
-              <a href="https://github.com/johnny-jack19/clock" target="_blank">
-                <button>View Code</button>
-              </a>
-            </div>
-          </div>
-          <button class="view-info" onclick="naming(this)">View More</button>
-        </div>
-
-        <div class="project-tile">
-          <h3>Rock, Paper, Scissors</h3>
-          <div class="img-overlay-container">
-            <img src="./pictures/rps.png" alt="Rock, paper, scissors" />
-            <div class="overlay hidden">
-              <p class="center">
-                Simple game of rock, paper, scissors that keeps score.
-              </p>
-              <br />
-              <p class="center">Made with:</p>
-              <br />
-              <p class="made-with">
-                <span class="made-with-item">HTML5</span>
-                <span class="made-with-item">CSS3</span>
-                <span class="made-with-item">JavaScript</span>
-              </p>
-              <a href="https://jackson-rps.herokuapp.com/" target="_blank">
-                <button>View Website</button>
-              </a>
-              <a
-                href="https://github.com/johnny-jack19/rock-paper-scissors"
-                target="_blank"
-              >
-                <button>View Code</button>
-              </a>
-            </div>
-          </div>
-          <button class="view-info" onclick="naming(this)">View More</button>
-        </div>
+        <button class="view-info" onclick="naming(this)">View More</button>
       </div>
-    </section>
-    <section id="contacts">
-      <h2>Can't wait to work with you!</h2>
-      <div id="contact-container">
-        <a href="https://github.com/johnny-jack19" target="_blank">
-          <i class="fa-brands fa-github links"></i>
-          github.com/johnny-jack19
-        </a>
-        <a
-          href="https://www.linkedin.com/in/jonathan-jackson-m/"
-          target="_blank"
-        >
-          <i class="fa-brands fa-linkedin links"></i>
-          linkedin.com/in/jonathan-jackson-m
-        </a>
-        <a href="mailto:jacksonj9891@gmail.com" target="_blank">
-          <i class="fa-solid fa-envelope links"></i>
-          jacksonj9891@gmail.com
-        </a>
+
+      <div class="project-tile">
+        <h3>Hotel Website</h3>
+        <div class="img-overlay-container">
+          <img src="./pictures/hotelSite.png" alt="Hotel Website" />
+          <div class="overlay hidden">
+            <p class="center">
+              This is the customer website portion of a 3 part hotel project.
+              The other two portions are a company website and an API/database
+              for it to connect to.
+            </p>
+            <br />
+            <p class="center">Made with:</p>
+            <p class="made-with">
+              <span class="made-with-item">HTML5</span>
+              <span class="made-with-item">CSS3</span>
+              <span class="made-with-item">JavaScript</span>
+              <span class="made-with-item">Node.js</span>
+              <span class="made-with-item">Express.js</span>
+              <span class="made-with-item">MySQL</span>
+            </p>
+            <a href="https://indigo-sky.herokuapp.com/" target="_blank">
+              <button>View Website</button>
+            </a>
+            <a href="https://github.com/johnny-jack19/indigo-sky" target="_blank">
+              <button>View Code</button>
+            </a>
+          </div>
+        </div>
+        <button class="view-info" onclick="naming(this)">View More</button>
       </div>
-    </section>
-    <script src="./portfolio.js"></script>
-  </body>
+
+      <div class="project-tile">
+        <h3>Company Website</h3>
+        <div class="img-overlay-container">
+          <img src="./pictures/company.jpg" alt="Hotel Company Website" />
+          <div class="overlay hidden">
+            <p class="center">
+              This is the company website portion of a 3 part hotel project.
+              The other two portions are a customer website and an
+              API/database for it to connect to.
+            </p>
+            <br />
+            <p class="center">Made with:</p>
+            <p class="made-with">
+              <span class="made-with-item">HTML5</span>
+              <span class="made-with-item">CSS3</span>
+              <span class="made-with-item">JavaScript</span>
+              <span class="made-with-item">Node.js</span>
+              <span class="made-with-item">Express.js</span>
+              <span class="made-with-item">MySQL</span>
+            </p>
+            <a href="https://jackson-hotel-company.herokuapp.com/" target="_blank">
+              <button>View Website</button>
+            </a>
+            <a href="https://github.com/johnny-jack19/hotel-company" target="_blank">
+              <button>View Code</button>
+            </a>
+          </div>
+        </div>
+        <button class="view-info" onclick="naming(this)">View More</button>
+      </div>
+
+      <div class="project-tile">
+        <h3>Analog Clock</h3>
+        <div class="img-overlay-container">
+          <img src="./pictures/clock.jpg" alt="Analog Clock" />
+          <div class="overlay hidden">
+            <p class="center">CSS Analog clock.</p>
+            <br />
+            <p class="center">Made with:</p>
+            <p class="made-with">
+              <span class="made-with-item">HTML5</span>
+              <span class="made-with-item">CSS3</span>
+              <span class="made-with-item">JavaScript</span>
+            </p>
+            <a href="https://jacksonclock.herokuapp.com/" target="_blank">
+              <button>View Website</button>
+            </a>
+            <a href="https://github.com/johnny-jack19/clock" target="_blank">
+              <button>View Code</button>
+            </a>
+          </div>
+        </div>
+        <button class="view-info" onclick="naming(this)">View More</button>
+      </div>
+
+      <div class="project-tile">
+        <h3>Rock, Paper, Scissors</h3>
+        <div class="img-overlay-container">
+          <img src="./pictures/rps.png" alt="Rock, paper, scissors" />
+          <div class="overlay hidden">
+            <p class="center">
+              Simple game of rock, paper, scissors that keeps score.
+            </p>
+            <br />
+            <p class="center">Made with:</p>
+            <br />
+            <p class="made-with">
+              <span class="made-with-item">HTML5</span>
+              <span class="made-with-item">CSS3</span>
+              <span class="made-with-item">JavaScript</span>
+            </p>
+            <a href="https://jackson-rps.herokuapp.com/" target="_blank">
+              <button>View Website</button>
+            </a>
+            <a href="https://github.com/johnny-jack19/rock-paper-scissors" target="_blank">
+              <button>View Code</button>
+            </a>
+          </div>
+        </div>
+        <button class="view-info" onclick="naming(this)">View More</button>
+      </div>
+    </div>
+  </section>
+  <section id="contacts">
+    <h2>Can't wait to work with you!</h2>
+    <div id="contact-container">
+      <a href="https://github.com/johnny-jack19" target="_blank">
+        <i class="fa-brands fa-github links"></i>
+        github.com/johnny-jack19
+      </a>
+      <a href="https://www.linkedin.com/in/jonathan-jackson-m/" target="_blank">
+        <i class="fa-brands fa-linkedin links"></i>
+        linkedin.com/in/jonathan-jackson-m
+      </a>
+      <a href="mailto:jacksonj9891@gmail.com" target="_blank">
+        <i class="fa-solid fa-envelope links"></i>
+        jacksonj9891@gmail.com
+      </a>
+    </div>
+  </section>
+  <script src="./portfolio.js"></script>
+</body>
+
 </html>
