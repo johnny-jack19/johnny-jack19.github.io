@@ -94,6 +94,11 @@ button:hover {
   animation-timing-function: ease-in-out;
 }
 
+#span-arrow {
+  width: 0;
+  margin: auto;
+}
+
 @keyframes bounce {
   0% {
     transform: translateY(0);
