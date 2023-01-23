@@ -19,3 +19,19 @@ function naming(element) {
     element.innerHTML = "View More";
   }
 }
+
+/***********************Calls to open API's************************/
+function pingChatApi() {
+  fetch("https://jackson-chat-api.herokuapp.com/userlist", {
+    method: "GET",
+  });
+}
+
+function pingHotelApi() {
+  fetch("https://jackson-hotel-db.herokuapp.com/rooms", {
+    method: "GET",
+  });
+}
+
+pingChatApi();
+pingHotelApi();
