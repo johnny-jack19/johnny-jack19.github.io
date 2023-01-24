@@ -22,16 +22,51 @@ function naming(element) {
 
 /***********************Calls to open API's************************/
 function pingChatApi() {
-  fetch("https://jackson-chat-api.herokuapp.com/userlist", {
+  fetch("https://jackson-chat-api.herokuapp.com", {
+    method: "GET",
+  });
+}
+
+function pingChat() {
+  fetch("https://jackson-chat.herokuapp.com", {
     method: "GET",
   });
 }
 
 function pingHotelApi() {
-  fetch("https://jackson-hotel-db.herokuapp.com/rooms", {
+  fetch("https://jackson-hotel-db.herokuapp.com", {
+    method: "GET",
+  });
+}
+
+function pingIndigoSky() {
+  fetch("https://indigo-sky.herokuapp.com", {
+    method: "GET",
+  });
+}
+
+function pingHotelCompany() {
+  fetch("https://jackson-hotel-company.herokuapp.com", {
+    method: "GET",
+  });
+}
+
+function pingClock() {
+  fetch("https://jacksonclock.herokuapp.com", {
+    method: "GET",
+  });
+}
+
+function pingRPS() {
+  fetch("https://jackson-rps.herokuapp.com", {
     method: "GET",
   });
 }
 
 pingChatApi();
 pingHotelApi();
+pingChat();
+pingClock();
+pingRPS();
+pingIndigoSky();
+pingHotelCompany();
