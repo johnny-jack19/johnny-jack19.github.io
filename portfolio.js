@@ -63,6 +63,12 @@ function pingRPS() {
   });
 }
 
+function pingCharacterSheet() {
+  fetch("https://jackson-character-sheet-91260bbcc3da.herokuapp.com/", {
+    method: "GET",
+  });
+}
+
 pingChatApi();
 pingHotelApi();
 pingChat();
@@ -70,3 +76,4 @@ pingClock();
 pingRPS();
 pingIndigoSky();
 pingHotelCompany();
+pingCharacterSheet();
